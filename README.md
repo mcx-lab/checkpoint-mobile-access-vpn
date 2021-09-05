@@ -44,7 +44,7 @@ List the available Java versions and try to find the OpenJDK version 8 or higher
 
 ```bash 
 $ sdk list java
-$ sdk install java 8.0.232-open
+$ sdk install java 8.0.302-open
 ```
 
 ### SSL
@@ -53,10 +53,10 @@ For the Check Point Mobile Access required packages, you'll need to install `xte
 
 ```bash
 $ sudo apt-get install xterm
-$ sudo apt-get install libnss3-tools certutil
+$ sudo apt-get install libnss3-tools
 ```
 
-### 32 bit libs
+### 32-bit libraries
 
 If you're running a 64 bit operating system, you'll need to install some 32 bit compatible libraries:
 
@@ -64,7 +64,6 @@ If you're running a 64 bit operating system, you'll need to install some 32 bit 
 $ sudo apt-get install libx11-6
 $ sudo dpkg --add-architecture i386
 $ sudo apt-get update
-$ sudo apt-get install multiarch-support
 $ sudo apt-get install libx11-6:i386 libc6:i386 libncurses5:i386 libstdc++6:i386 libstdc++5:i386 libpam0g:i386
 ```
 
@@ -106,7 +105,7 @@ $ chmod +x cshell_install.sh
 The first script we're going to run is the `snx_install.sh`, which should not give any errors when installing it.
 
 ```bash
-$ ./snx_install.sh
+$ sudo ./snx_install.sh
 Installation successfull
 ```
 
@@ -134,6 +133,10 @@ LAUNCHER> CShell Started
 ```
 
 It means it has successfully been installed, and you should be fine trying to connect to the VPN now, but it doesn't mean we don't have more work to do.
+
+## Browsers
+
+The steps above work on Ubuntu 21.04 with Google Chrome (Version 93.0.4577.63), but NOT on Firefox (88.0).
 
 ## Troubleshooting
 
